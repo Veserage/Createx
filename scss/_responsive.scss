@@ -1,0 +1,281 @@
+@media (max-width: 768px){
+    section{
+        padding: 40px 0;
+    }
+    header{
+        position: absolute;
+        .container{
+            justify-content: center;
+        }
+        .header__navbar {
+            
+            .navbar__logo{display: none;}
+            .navbar__links{
+                
+                font-size: 1.4rem;
+                gap: 15px;
+            }
+        }
+        .header__contacts{display: none;}
+
+        @media (max-width:340px) {
+            padding: 15px 0;
+        }
+        @media (min-width:500px){
+            .header__navbar{
+                .navbar__logo{display: block;}
+            }
+        }
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .about{
+        padding: 60px 0 60px 0;
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        .about__text{
+            width: 70%;
+            
+        }
+        .about__breadcrumbs{
+            margin-bottom: 10px;
+            @media (max-width:350px){
+                display: none;
+            }
+        }
+        .about__header{
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .about__info{
+            line-height: 1.2;
+            font-size: 1.3rem;
+        }
+        @media (min-width:500px) {
+            padding-top: 80px;
+        }
+    }
+    .stats{
+        padding-top: 20px;
+        .stats__cards {
+            flex-wrap: wrap;
+            gap: 10px;
+            @media (min-width: 600px){
+                gap:20px;
+            }
+        }
+        .stats__card{
+            width: 48%;
+        }
+        .stats__icon{
+            margin-bottom: 10px;
+        }
+        
+        .stats__value{
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+        .stats__text {
+            text-align: center;
+            line-height: 1.4;
+            font-size: 1.4rem;
+        }
+    }
+    .quote{
+        display: none;
+    }
+    .history{
+        .history__grid {
+            display: grid;
+            grid-template-areas: 
+            "header . . arrows"
+            "image image image image"
+            "navbar . info info"
+            "navbar . info info";
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .history__navbar{
+            font-size: 1.7rem;
+        }
+        .moment__info {
+            align-items: start;
+            .moment__image{
+                display: none;
+            }
+            @media (min-width: 450px){
+                align-items: center;
+                .moment__description{
+                    font-size: 1.3rem;
+                }
+                .moment__image{
+                    display: block;
+                    margin-bottom: 12px;
+                }
+            }   
+        }
+    }
+    .partners{
+        overflow: hidden;
+        h1{
+            margin-bottom: 10px;
+        }
+        .partners__logos{
+            display: none;
+        }
+        .partners__description{
+            margin-bottom: 20px;
+        }
+        .partners__marquee{
+            display: block;
+            animation: partnersScroll infinite 10s linear;
+        }
+        @keyframes partnersScroll {
+            0%{ transform: translateX(0%);}
+            100%{ transform: translateX(-50%);}
+        }
+    }
+    .team{
+        h1{
+            margin-bottom: 10px;
+        }
+        .team__description{
+            margin-bottom: 16px;
+        }
+        .team__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px 20px;
+            margin-bottom: 10px;
+            .worker__card{
+                text-align: center;
+                .worker__name{ line-height: 1.2;}
+                .worker__post{line-height: 1.2;}
+            }
+        }
+    }
+    .worldwide{
+        h1{
+            top:-2.5rem
+        }
+    }
+    .contacts{
+        &>img{display: none;}
+        .contacts__form{
+            position: static;
+            left: 0;
+            max-width: 100%;
+        }
+    }
+    .footer{
+        padding: 20px 0;
+        h6{
+            margin-bottom: 3px;
+        }
+        .footer__email{
+            input{
+                width: 50%;
+            }
+        }
+        
+        .footer__grid{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .footer__whoweare, .footer__office, .footer__experience {
+            margin-bottom: 15px;
+        }
+        .footer__totop{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+    section{
+        padding: 60px 0;
+    }
+    header{
+        padding: 10px 0;
+        .header__navbar{
+            width: 80%;
+            .navbar__logo{margin-right: 30px;}
+            .navbar__links{
+                font-size: 1.5rem; 
+                margin-right: 10px;
+                gap:20px;
+            }
+        }
+    }
+    .about{
+        padding: 90px 0;
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        .about__header{
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        
+        .about__info{
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+        }
+        .about__text{
+            width: 60%;
+            
+        }
+        .about__breadcrumbs{
+            margin-bottom: 20px;
+        }
+    }
+    .stats{
+        padding-top: 20px;
+        .stats__cards {
+            flex-wrap: wrap;
+            gap: 10px;
+            @media (min-width: 600px){
+                gap:20px;
+            }
+        }
+        .stats__card{
+            width: 48%;
+        }
+        .stats__icon{
+            margin-bottom: 10px;
+        }
+        
+        .stats__value{
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+        .stats__text {
+            text-align: center;
+            line-height: 1.4;
+            font-size: 1.4rem;
+        }
+    }
+    .quote{
+        display: none;
+    }
+    .worldwide{
+        h1{
+            top:-3.5rem
+        }
+    }
+    .contacts{
+        &>img{display: none;}
+        .contacts__form{
+            position: static;
+            left: 0;
+            max-width: 100%;
+        }
+    }
+}
+

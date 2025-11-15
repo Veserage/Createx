@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Createx</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__navbar">
-            <div class="navbar__logo">
-                <img src="images/logo.svg" alt="Logo image">
-            </div>
-            <div class="navbar__menu">
-                <ul>
+    <header>
+        <div class="container">
+            <div class="header__navbar">
+                <div class="navbar__logo">
+                    <img src="images/logo.svg" alt="Logo image">
+                </div>
+                <ul class="navbar__links">
                     <li class="navbar__item active">About us</li>
                     <li class="navbar__item">Services</li>
                     <li class="navbar__item">Work</li>
@@ -26,68 +30,337 @@
                     <li class="navbar__item">Contacts</li>
                 </ul>
             </div>
-        </div>
-        <div class="header__contacts">
-            <div class="header__contacts-phone">
-                <p>Call us</p>
-                <p>(405) 555-0128</p>
+            <div class="header__contacts">
+                <div class="header__contacts--phone">
+                    <img src="/images/icons/icPhone.svg">
+                    <div class="contacts--text">
+                        <p>Call us</p>
+                        <p>(405) 555-0128</p>
+                    </div>
+                </div>
+                <div class="header__contacts--email">
+                    <img src="/images/icons/icChat.svg">
+                    <div class="contacts--text">
+                        <p>Talk to us</p>
+                        <p>hello@createx.com</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="header__contacts-email">
-                <p>Talk to us</p>
-                <p>hello@createx.com</p>
-            </div>
         </div>
+
     </header>
 
     <main>
         <section class="about">
-            <h1></h1>
-        </section>
-        <section class="stats">
+            <div class="container">
+                <div class="about__text">
+                    <div class="about__breadcrumbs"> Homepage <span class="about__breadcrumbs--slashed">/ About
+                            Us</span>
+                    </div>
+                    <p class="about__header">ABOUT US</p>
+                    <p class="about__info">Createx Construction Bureau has been successfully operating in the USA
+                        construction market since
+                        2000. We are proud to offer you quality construction and exemplary service.</p>
+                </div>
+            </div>
 
         </section>
-        <section class="citate">
+        <section class="stats">
+            <div class="container">
+                <div class="stats__cards">
+                    <div class="stats__card">
+                        <div class="stats__icon"><img src="/images/icons/icLike.svg" alt="icLike"></div>
+                        <div class="stats__value">60%</div>
+                        <div class="stats__text">Clients on the recommendation of friends</div>
+                    </div>
+                    <div class="stats__card">
+                        <div class="stats__icon"><img src="/images/icons/icPainting.svg" alt="icPainting"></div>
+                        <div class="stats__value">2400+</div>
+                        <div class="stats__text">Apartments renovated</div>
+                    </div>
+                    <div class="stats__card">
+                        <div class="stats__icon"><img src="/images/icons/icHelmet.svg" alt="icHelmet"></div>
+                        <div class="stats__value">670</div>
+                        <div class="stats__text">Qualified specialists</div>
+                    </div>
+                    <div class="stats__card">
+                        <div class="stats__icon"><img src="/images/icons/icPantone.svg" alt="icPantone"></div>
+                        <div class="stats__value">150000+ m<sup>2</sup></div>
+                        <div class="stats__text">Finishing work was carried out</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="quote__photo">
+                    <img src="/images/dude.jpg" alt="Courtney Alexander photo">
+                    <div class="quote__grid">
+                        <div class="quote__braces">
+                            <img src="images/braces.svg" alt="">
+                        </div>
+                        <div class="quote__text">
+                            <p>
+                                Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in. Sed aliquet in egestas
+                                hac
+                                at
+                                proin sed quam. Etiam aliquet sagittis non, massa cum pulvinar. Et in leo, tempus purus
+                                vestibulum ut blandit et mi. Odio massa purus vel praesent arcu enim elit felis viverra.
+                            </p>
+                            <p>
+                                Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra quis metus amet
+                                eleifend
+                                amet.
+                                Vet suspendisse faucibus tempor ipsum integer.
+                            </p>
+                        </div>
+                        <div class="quote__author">
+                            <div class="quote__name">
+                                Courtney Alexander
+                            </div>
+                            <div class="quote__company">
+                                CEO - Createx Construction Bureau
+                            </div>
+                        </div>
+                        <div class="quote__signature">
+                            <img src="images/signature.svg" alt="signature">
+                        </div>
+                    </div>
+                </div>
 
         </section>
         <section class="values">
+            <div class="container">
+                <h1>Our core values</h1>
+                <p class="values__mission">Our mission is to set the highest standards for construction sphere.</p>
+                <div class="values__cards">
+                    <div class="values__card">
+                        <div class="values__icon"><img src="images/icons/icLikeOrange.svg" alt=""></div>
+                        <div class="values__name">Quality</div>
+                        <div class="values__description">Culpa nostrud commodo ea consequat aliquip reprehenderit.
+                            Veniam
+                            velit nostrud aliquip sunt.</div>
+                    </div>
+                    <div class="values__card">
+                        <div class="values__icon"><img src="images/icons/icHand.svg" alt=""></div>
+                        <div class="values__name">Safety</div>
+                        <div class="values__description">Anim reprehenderit sint voluptate exercitation adipisicing
+                            laborum
+                            adipisicing. Minim empor est ea.</div>
+                    </div>
+                    <div class="values__card">
+                        <div class="values__icon"><img src="images/icons/icSlippers.svg" alt=""></div>
+                        <div class="values__name">Comfort</div>
+                        <div class="values__description">Sit veniam aute dolore adipisicing nulla sit culpa. Minim
+                            mollit voluptate ullamco proident ea ad.</div>
+                    </div>
+                </div>
+            </div>
 
         </section>
         <section class="history">
-
+            <div class="container">
+                <div class="history__grid">
+                    <h1>Our history</h1>
+                    <div class="history__arrows">
+                        <div class="history__arrow--left"><img src="images/icons/sliderLeftArrow.svg"
+                                alt="sliderLeftArrow"></div>
+                        <div class="history__arrow--right"><img src="images/icons/sliderRightArrow.svg"
+                                alt="sliderRightArrow"></div>
+                    </div>
+                    <div class="history__navbar">
+                        <ul>
+                            <li class="history__moment history__moment--active">Present</li>
+                            <li class="history__moment">March 2019</li>
+                            <li class="history__moment">November 2018</li>
+                            <li class="history__moment">July 2015</li>
+                            <li class="history__moment">August 2010</li>
+                            <li class="history__moment">February 2007</li>
+                            <li class="history__moment">May 2004</li>
+                            <li class="history__moment">October 2001</li>
+                            <li class="history__moment">June 2000</li>
+                        </ul>
+                    </div>
+                    <div class="moment__info">
+                        <div class="moment__image">
+                            <img src="/images/historyBackground.jpg" alt="History Background image">
+                        </div>
+                        <div class="moment__description">
+                            Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu nec vitae,
+                            malesuada vitae egestas integer et morbi. Maecenas sed quis diam posuere malesuada magnis.
+                            Bcelerisque dapibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="partners">
-
+            <div class="container">
+                <h1>Our partners</h1>
+                <div class="partners__description">We are supported by 12+ industry bodies and media partners</div>
+                <div class="partners__logos">
+                    <img src="images/partners.png" alt="partners logos.png">
+                </div>
+            </div>
+            <div class="partners__marquee">
+                <img src="images/partners.png" alt="partners marquee">
+            </div>
         </section>
         <section class="team">
+            <div class="container">
+                <h1>Our team</h1>
+                <p class="team__description">People are at the heart of Createx Construction Bureau </p>
+                <div class="team__grid">
+                    <div class="worker__card">
+                        <img src="images/team/courtney.png" alt="Courtney Alexander">
+                        <p class="worker__name">Courtney Alexander</p>
+                        <p class="worker__post">CEO, Co-Founder</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/calvin.png" alt="Calvin Fox">
+                        <p class="worker__name">Calvin Fox</p>
+                        <p class="worker__post">CTO, Co-Founder</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/johnny.png" alt="Johnny Lane">
+                        <p class="worker__name">Johnny Lane</p>
+                        <p class="worker__post">Commercial Manager</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/diane.png" alt="Diane Mccoy">
+                        <p class="worker__name">Diane Mccoy</p>
+                        <p class="worker__post">Director of Human Resources</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/judith.png" alt="Judith Warren">
+                        <p class="worker__name">Judith Warren</p>
+                        <p class="worker__post">Lead Accountant</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/floyd.png" alt="Floyd Simmmons">
+                        <p class="worker__name">Floyd Simmmons</p>
+                        <p class="worker__post">Finacial Director</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/serenity.png" alt="Serenity Edwards">
+                        <p class="worker__name">Serenity Edwards</p>
+                        <p class="worker__post">Director of Marketing</p>
+                    </div>
+                    <div class="worker__card">
+                        <img src="images/team/shawn.png" alt="Shawn Edwards">
+                        <p class="worker__name">Shawn Edwards</p>
+                        <p class="worker__post">Tech Lead</p>
+                    </div>
+                </div>
+                <p class="team__offer">Become a part of the best team in the construction market of the USA. <span
+                        class="team__available">Available
+                        Positions</span></p>
 
+            </div>
         </section>
         <section class="worldwide">
-
+            <h1>We work worldwide</h1>
+            <img src="/images/map.png" alt="map">
         </section>
         <section class="contacts">
+            <img src="images/contactsBackground.png" alt="">
+            <div class="contacts__form">
+                <h3>A quick way to discuss details</h3>
+                <form>
+                    <fieldset>
+                        <p class="contacts__field">
+                            <label for="name">Name<span class="field__necessary">*</span></label>
+                            <input id="name" type="text" placeholder="Your name" required>
+                        </p>
+                        <p class="contacts__field">
+                            <label for="phone">Phone<span class="field__necessary">*</span></label>
+                            <input id="phone" type="phone" placeholder="Your phone number" required>
+                        </p>
+                        <p class="contacts__field">
+                            <label for="email">Email</label>
+                            <input id="email" type="mail" placeholder="Your working email">
+                        </p>
+                        <p class="contacts__field">
+                            <label for="message">Message <span class="field__necessary">*</span></label>
+                            <input id="message" type="text" placeholder="Your message" required>
+                        </p>
+                        <p class="contacts__agreement">
+                            <input type="checkbox" required>
+                            <span>I agree to receive communications from Createx
+                                Construction
+                                Bureau.</span>
+                        </p>
+                        <button type="submit">SEND REQUEST</button>
+                    </fieldset>
+                </form>
+            </div>
 
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__info">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__info">
+                    <div class="footer__logo"> <img src="images/logoFooter.svg" alt="Createx"></div>
+                    <div class="footer__socials">
+                        <img src="images/socials/whatsapp.svg" alt="">
+                        <img src="images/socials/messanger.svg" alt="">
+                        <img src="images/socials/facebook.svg" alt="">
+                        <img src="images/socials/twitter.svg" alt="">
+                        <img src="images/socials/youTube.svg" alt="">
+                    </div>
+                    <p class="footer__story">
+                        Createx Construction Bureau has been successfully operating in the USA construction market since
+                        2000. We are proud to offer you quality construction and exemplary service. Our mission is to
+                        set
+                        the highest standards for construction sphere.
+                    </p>
+                </div>
+                <div class="footer__office">
+                    <h6>Head office</h6>
+                    <p class="footer__p"><span class="footer__span">Address:</span> 8502 Preston Rd. Inglewood, New York
+                    </p>
+                    <p class="footer__p"><span class="footer__span">Call:</span> (405) 555-0128</p>
+                    <p class="footer__p"><span class="footer__span">Email:</span> hello@createx.com</p>
+                </div>
+                <div class="footer__whoweare">
+                    <h6>Who we are</h6>
+                    <p class="footer__p">About us</p>
+                    <p class="footer__p">Available Positions</p>
+                    <p class="footer__p">Contacts</p>
+                </div>
+                <div class="footer__experience">
+                    <h6>Our Experience</h6>
+                    <p class="footer__p">Services</p>
+                    <p class="footer__p">Work</p>
+                    <p class="footer__p">News</p>
+                </div>
+                <div class="footer__email">
+                    <h4>Lets stay in touch</h4>
+                    <form>
+                        <span>
+                            <input name="email" type="text" placeholder="Your email address">
+                            <button type="submit">SUBSCRIBE</button>
 
+                        </span>
+                        <p class="email__explanation">*Subscribe to our newsletter to receive communications and early
+                            updates
+                            from Createx Construction
+                            Bureau.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© All rights reserved. Made with <i class="fa-regular fa-heart"></i> by Createx Studio</p>
+                <div class="footer__totop">GO TO TOP <button class="totop__button">
+                        <img src="images/icons/up-chevron.svg" alt="">
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="footer__office">
 
-        </div>
-        <div class="footer__whoweare">
-
-        </div>
-        <div class="footer__experience">
-
-        </div>
-        <div class="footer__email">
-
-        </div>
-        <div class="footer_bottom">
-            <p>© All rights reserved. Made with <i>love</i> by Createx Studio</p>
-            <div class="footer__totop">GO TO TOP <i>arrowUp</i> </div>
-        </div>
     </footer>
 </body>
+
 </html>
